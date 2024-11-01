@@ -4,7 +4,7 @@ __This repository is used within the framework of the online university course W
 
 _It will mainly be used to learn about and test html-generating programming languages and getting familiar with GIT._
 
-- Languages: Markdown
+- Languages: Markdown, Twig
 - Files: Pico
 - GIT
 
