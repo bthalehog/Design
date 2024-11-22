@@ -120,6 +120,7 @@
     "string-width-cjs": "^4.2.3",
     "strip-ansi": "^6.0.1",
     "strip-ansi-cjs": "^6.0.1",
+    "style": "^0.0.3",
     "style-search": "^0.1.0",
     "stylelint-scss": "^6.9.0",
     "stylus": "^0.64.0",
@@ -143,8 +144,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
-    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed"
+    "style": "sass kmom03/scss/style.scss kmom03/css/style.css --no-source-map",
+    "style-min": "sass kmom03/scss/style.scss kmom03/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

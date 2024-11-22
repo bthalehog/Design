@@ -8,6 +8,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'blockquotes';
 @import 'code';
 @import 'variables';
+@import '../../kmom03/scss/technology.scss';
 
 * {
   color: $font-color;
@@ -24,33 +25,8 @@ body {
   height: 100%;
   align-items: center;
   background-color: $background-color;
-  display: flex;
-  flex-direction: column;
   //height: 100vh; replaced durign centering
   /* I spared all the compatibility properties for the different browsers */
-}
-
-.parent {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  
-  .child {
-    background-color: $background-alternative-color;
-    margin: $background-color;
-    padding: $background-alternative-color;
-    width: 80%;
-  }
-
-  .child:first-child {
-    margin-top: 0;
-  }
-
-  .child:last-child {
-    margin-bottom: 0;
-  }
 }
 
 h1,

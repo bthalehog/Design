@@ -1,3 +1,5 @@
+/* Style */
+
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
@@ -8,10 +10,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'blockquotes';
 @import 'code';
 @import 'variables';
-@import 'technologies';
-$kmom02color: rgb(173, 216, 230);
-$commonValue: 1.5em;
+@import 'technology';
 
+/* All */ 
 * {
   margin: 0;
   padding: 0;
@@ -19,79 +20,106 @@ $commonValue: 1.5em;
   font-family: $font-family;
 }
 
+/* Elements */
 html {
   background-color: $background-color;
-  flex-direction: column;
-  flex-basis: 0;
   font-size: 100%;
   height: 100%;
+  width: 100vw;
   letter-spacing: 1px;
 }
 
-@media (min-width: 64em) {
-  html {
-    font-size: 112.5%;
-  }
+body {
+  height: 100vh;
+  background-color: $background-color;
+  line-height: 1.4;
+  //height: 100vh; replaced durign centering
 }
 
+header {
+  height: 0;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* --------- CLASSES ----------- */
+
+.grid {
+  display: grid;
+}
+
+/* --------------- Layout --------------- */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px 600px 200px;
+}
+
+.header,
+.main,
+.footer,
+.side-bar {
+  padding: 1em;
+  border: 3px solid $background-color;
+}
+
+/* --------------- Header --------------- */
+.header {
+  background-color: #567997;
+  grid-row: 1 / 1;
+  align-items: center;
+}
+
+/* --------------- Content  --------------- */
+
+.main {
+  background-color: #cccaeb;
+  grid-column: 2 / 2;
+  grid-row: 2 / 3;
+  grid-gap: 25px;
+  grid-template-areas: 'top-left top-right' 'bottom bottom';
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.side-bar {
+  background-color: #238cc98f;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+/* --------------- Footer --------------- */
+
+.footer {
+  background-color: #567997;
+  grid-column: 1 / 3;
+  grid-row: 3 / 3;
+}
+
+/* Template areas */
+.bottom { grid-area: bottom; }
+.top-left { grid-area: top-left; }
+.top-right { grid-area: top-right; }
+
+/* ----------- Media queries ----------- */
+
+/* Top-element growth on small */
 @media screen and (max-width: 960px) {
   .main {
       grid-gap: 5px;
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas: 'top-left' 'top-right' 'bottom';
   }
-}
-
-body {
-  height: 100%;
-  background-color: $background-color;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.4;
-  //height: 100vh; replaced durign centering
-}
-
-.parent {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  
-  .child {
-    background-color: $background-alternative-color;
-    margin: $commonValue;
-    padding: $commonValue;
-    width: 80%;
-    flex-direction: row;
-  }
-
-  .child:first-child {
-    margin-top: 0;
-  }
-
-  .child:last-child {
-    margin-bottom: 0;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-family;
-}
-
-h1 {
-  font-size: 1em;
-  margin-bottom: 3em;
-}
-
-p {
-  font-size: 1em;
-  margin-bottom: 1.5em;
 }
 
 .marvel-regular {
