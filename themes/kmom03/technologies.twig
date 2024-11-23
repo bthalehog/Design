@@ -1,18 +1,17 @@
+
+<div class="main" role="main">
+
+    {% include 'incl/header.twig' %}
+
+    {% include 'incl/nav.twig' %}
     <div class="wrapper">
-        <div class="header">
-            {% include 'incl/header.twig' %}
-
-            {% include 'incl/nav.twig' %}
+        <div class="landingpage">
+            {{ content }} 
         </div>
 
-        <div class="main" role="main">
-            <div class="landingpage">
-                {{ content }}
-            </div>
         </div>
-
-        <div class="footer">
             {% include 'incl/footer.twig' %}
-        </div>
     </div>
+</div>
+
 </html>
