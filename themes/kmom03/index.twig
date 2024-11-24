@@ -1,20 +1,10 @@
-<div class="wrapper">
-    <head>
-        <div class="header">
-            {% include 'incl/header.twig' %}
+{% include 'incl/header.twig' %}
 
-            {% include 'incl/nav.twig' %}
-        </div>
-    </head>
-    <body>
-        <div class="main" role="main">
-            {{ content }}
-        </div>
-    </body>
-
-    <div class="footer">
-        {% include 'incl/footer.twig' %}
+<div class="main">
+    <div class="main" role="main">
+        {{ content }}
     </div>
 </div>
+{% include 'incl/footer.twig' %}
 
 </html>
