@@ -11,6 +11,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'code';
 @import 'variables';
 @import 'technology';
+@import 'footer';
 
 /* All */ 
 * {
@@ -30,7 +31,6 @@ html {
 }
 
 body {
-  height: 100vh;
   background-color: $background-color;
   line-height: 1.4;
   //height: 100vh; replaced durign centering
@@ -52,11 +52,6 @@ p {
 }
 
 /* --------- CLASSES ----------- */
-
-.grid {
-  display: grid;
-}
-
 /* --------------- Layout --------------- */
 .wrapper {
   max-width: 960px;
@@ -80,6 +75,8 @@ p {
 
 /* --------------- Head ------------------ */
 .nav {
+  background-color: #567997;
+  align-content: center;
   display: grid;
   grid-template-columns: 200px 200px auto;
   grid-template-rows: 200px;
@@ -119,7 +116,7 @@ p {
   align-items: center;
 }
 
-/* --------------- Content  --------------- */
+/* --------------- Main  --------------- */
 
 .main {
   background-color: #cccaeb;
@@ -129,20 +126,6 @@ p {
   grid-template-areas: 'top-left top-right' 'bottom bottom';
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
-}
-
-.side-bar {
-  background-color: $background-alternative-color;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-/* --------------- Footer --------------- */
-
-.footer {
-  background-color: #567997;
-  grid-column: 1 / 3;
-  grid-row: 3 / 3;
 }
 
 /* Template areas */
@@ -155,9 +138,9 @@ p {
 /* Top-element growth on small */
 @media screen and (max-width: 960px) {
   .main {
-      grid-gap: 5px;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-areas: 'top-left' 'top-right' 'bottom';
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 'top-left' 'top-right' 'bottom';
   }
 }
 

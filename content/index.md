@@ -19,3 +19,5 @@ Within the framework of the course we use:
 
 ***
 (The source for this page is in `content/index.md`.)
+
+# Technologies

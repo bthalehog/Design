@@ -19,4 +19,4 @@ techs:
       class: sqlite
 ---
 
-# Technologies
+Technologies

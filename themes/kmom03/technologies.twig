@@ -1,20 +1,18 @@
 {% include 'incl/header.twig' %}
 
 <body>
-    <div class="main" role="main">
-        <div class="landingpage">
-            <header class=titleBox>
-                {{ content }}
-            </header>
-            
-            {% for tech in meta.techs %}
-                <a href="{{ base_url }}/technology/{{ tech.class }}">
-                <div class="box{{ tech.class }}"><h1>{{ tech.name }}</h1></div>
-                </a>
-            {% endfor %}
+    <div class="technologies-page" role="main">
+        <div class="box-title">
+            {{ content }}
         </div>
+        
+        {% for tech in meta.techs %}
+            <div class="box{{ tech.class }}">
+                <a href="{{ base_url }}/technology/{{ tech.class }}">{{ tech.class }}</a>
+            </div>
+            
+        {% endfor %}
     </div>
-
     {% include 'incl/footer.twig' %}
 </body>
 

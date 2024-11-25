@@ -1,0 +1,16 @@
+/* Footer */
+
+.footer {
+  display: grid;
+  background-color: #567997;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px;
+}
+  
+.footercontent {
+  grid-column: 2 / 3;
+  grid-row: auto;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+}
