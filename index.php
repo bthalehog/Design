@@ -17,6 +17,10 @@ $pico = new Pico(
 );
 
 // override configuration?
+$pico->setConfig(array(
+    'session' => $_SESSION
+));
+
 //$pico->setConfig(array());
 
 // run application

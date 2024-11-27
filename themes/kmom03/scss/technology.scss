@@ -89,7 +89,7 @@ header {
 .boxgit:hover,
 .boxsqlite:hover,
 .boxhtml:hover {
-  box-shadow: 10px 10px 5px 0px rgb(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* For my technologies viewpage */
@@ -117,7 +117,7 @@ header {
   flex-direction: column;
   height: 50vh;
   width: 10%;
-  justify-content: space-between;
+  justify-content: center;
   flex-grow: 1;
   text-align: center;
 }

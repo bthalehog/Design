@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: $background-color;
+  background-color:$body-color;
   line-height: 1.4;
   //height: 100vh; replaced durign centering
 }
@@ -39,6 +39,10 @@ body {
 header {
   height: 0;
   line-height: 1.4;
+}
+
+footer {
+  background-color: $frame-footer-color;
 }
 
 h1 {
@@ -58,10 +62,11 @@ p {
   margin: 0 auto;
   grid-template-columns: 200px auto;
   grid-template-rows: 200px 600px 200px;
+  background-color: $background-color;
 }
 
 .head {
-  background-color: #567997;
+  background-color: $frame-head-color;
   display: grid;
 }
 
@@ -73,9 +78,13 @@ p {
   border: 3px solid $background-color;
 }
 
+.footer {
+  background-color:$frame-footer-color;
+}
+
 /* --------------- Head ------------------ */
 .nav {
-  background-color: #567997;
+  background-color: $frame-head-color;
   align-content: center;
   display: grid;
   grid-template-columns: 200px 200px auto;
@@ -83,14 +92,14 @@ p {
 }
 
 .logo {
-  background-color: #567997;
+  background-color: $frame-head-color;
   grid-column: 1 / 2;
   grid-row: 1 / 1;
   align-items: center;
 }
 
 .title {
-  background-color: #567997;
+  background-color: $frame-head-color;
   font-size: xx-large;
   grid-column: 2 / 3;
   grid-row: 1 / 1;
@@ -100,7 +109,7 @@ p {
 
 .navbar {
   align-self: center;
-  background-color: #567997;
+  background-color: $frame-head-color;
   grid-column: 3 / 3;
   grid-row: 1 / 1;
   font-size: xx-large;
@@ -110,7 +119,7 @@ p {
 
 /* --------------- Header ---------------- */
 .header {
-  background-color: #567997;
+  background-color: $frame-head-color;
   grid-column: 2 / 3;
   grid-row: 1 / 1;
   align-items: center;
@@ -119,7 +128,7 @@ p {
 /* --------------- Main  --------------- */
 
 .main {
-  background-color: #cccaeb;
+  background-color: $background-color;
   grid-column: 2 / 2;
   grid-row: 2 / 3;
   grid-gap: 25px;

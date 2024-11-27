@@ -1,0 +1,125 @@
+/* Style-dark */
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import '../../node_modules/normalize.css/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import 'variables-dark';
+@import 'variables';
+@import 'footer';
+
+@import 'blockquotes';
+@import 'code';
+
+@import 'technology';
+
+
+/* All */ 
+* {
+  color: $dark-font-color1;
+  font-family: $font-family;
+}
+
+/* Main elementes */ 
+html {
+  background-color: $dark-secondary-background-color;
+}
+
+body {
+  background-color: $dark-passive-background-color;
+}
+
+.main {
+  background-color: $dark-passive-background-color;
+}
+
+.head {
+  background-color: $dark-frame-color;
+}
+
+/* Other elements */
+.header,
+.main,
+.footer,
+.side-bar {
+  padding: 1em;
+  border: 3px solid $dark-border2;
+}
+
+/* HEAD-classes */
+
+.nav {
+  background-color: $dark-secondary-background-color;
+}
+
+.logo {
+  background-color: $dark-secondary-background-color;
+}
+
+.title {
+  background-color: $dark-secondary-background-color;
+}
+
+.navbar {
+  background-color: $dark-passive-background-color;
+}
+
+/* --------------- Header class ---------------- */
+.header {
+  background-color: $dark-passive-background-color;
+}
+
+
+/* Rapportsida */
+
+.kmom04report {
+  align-items: left;
+  align-content: left;
+  background-color: #ced417 !important;
+}
+
+/* Elements */
+
+blockquote {
+  border-left: 0.5em solid $dark-border2;
+}
+
+code {
+  background: $dark-main-background-color;
+  border: $dark-border1;
+}
+
+pre {
+  background: $dark-secondary-background-color;
+  border: 1px solid $dark-border2;
+}
+
+/* Classes */
+
+.footer {
+  background-color: $dark-frame-color;
+}
+
+.footercontent {
+  color: $dark-font-color2;
+}
+
+/*----- Tech article page side-bar -----*/
+
+.side-bar {
+  background-color: $dark-secondary-background-color;
+  color: $dark-font-color1;
+}
+
+.side-bar h2 {
+  border: 2px $dark-border1;
+  padding: 1px;
+}
+
+/* ---------- Tech article page content -----------*/
+.techarticle {
+  background-color: $dark-secondary-background-color;
+}
