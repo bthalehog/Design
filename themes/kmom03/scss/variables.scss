@@ -1,28 +1,64 @@
-/* Variables */
-$kmom02color: rgb(173, 216, 230);
-$kmom03color: rgb(173, 216, 230);
+/* Variables for style */
+
+/* Commons */
 $common-value: 5 em;
 
-/* Main theme */
-$frame-head-color: #567997;
-$frame-footer-color: #567997;
-$sidebar-color: #8dabc6;
+// KMOM
+$kmom02color: rgb(173, 216, 230);
+$kmom03color: rgb(173, 216, 230);
 
-$background-color: #919dac;
-$background-alternative-color: #cfdce7cc;
+/* Color scheme - monochrome */
+// Header and footer style
+$frame-color: #406583;
+$passive-frame-color: #5e7080;
 
-$body-color: #919dac;
+// Background of content and objects
+$main-background-color: #919dac;
+$alternative-background-color: #aebece;
+$passive-background-color: #aebfcecc;
 
-/* Objects */
-$box-color: #406583;
-$border-color: #8dabc6;
-$border-alternative-color: #2c73b035;
+// Borders
+$border1: #5e7080;
+$border2: #406583;
 
-/* Typography */
-$font-color: #1e5275;
-$font-alternative-color: #aebece;
+// Accent colors
+$accent-color1: #bb92ce; 
+$accent-color2: rgba(53, 48, 97, 0.982);
+
+/* Site objects */
+// Technologies landing
+$box-color: #fff;
+$side-bar: #5e7080;
+
+// Fonts
 $font-family: 'Marvel', sans-serif;
+$font-alternative-color: #aebece;
 
-/* Compliments */
-$accent-color: #aebece;
+// Font-color
+$font-color1: #1e5275;
+$font-color2: rgb(91, 140, 155);
 
+// Font classes
+.marvel-regular {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+.marvel-bold {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+    
+.marvel-regular-italic {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+    
+.marvel-bold-italic {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}

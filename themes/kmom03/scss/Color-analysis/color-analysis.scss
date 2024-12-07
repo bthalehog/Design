@@ -1,0 +1,46 @@
+/* Color analysis page */
+
+html {
+    padding: 0;
+}
+
+head {
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
+.main-color-analysis {
+    padding: 2px;
+    border: 1px solid black;
+    height: 100vh;
+    width: 80%;
+    color: black;
+    background-color: lightseagreen;
+}
+
+.color-analysis-article {
+    padding: 2px;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: salmon;
+}
+
+.color-analysis-picture {
+    padding: 2px;
+    border: none;
+    height: 300px;
+    width: 70%;
+}
+
+.color-analysis-scheme {
+    padding: 2px;
+    border: 1px solid black;
+    height: 100px;
+    width: auto;
+    background-color: transparent;
+}

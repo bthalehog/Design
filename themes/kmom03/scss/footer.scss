@@ -1,4 +1,5 @@
 /* Footer */
+@import './Darktheme/variables-dark.scss';
 
 .footer {
   display: grid;
@@ -13,4 +14,20 @@
   align-content: center;
   text-align: center;
   color: #fff;
+}
+
+/* Dark mode */
+.footer-dark {
+  display: grid;
+  background-color: #567997;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px;
+}
+  
+.footercontent-dark {
+  grid-column: 2 / 3;
+  grid-row: auto;
+  align-content: center;
+  text-align: center;
+  color: $dark-font-color1;
 }

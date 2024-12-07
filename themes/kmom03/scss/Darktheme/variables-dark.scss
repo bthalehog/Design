@@ -1,0 +1,45 @@
+/* Variables for dark-theme */
+
+/* Color scheme */
+$dark-main-background-color: #585750;
+$dark-passive-background-color: #41403a;
+
+$dark-frame-color: #41403a;
+$dark-passive-frame-color: #41403a;
+
+$dark-font-color1: rgb(5, 132, 37);
+$dark-font-color2: #252;
+
+$dark-border1: #1d1d1a;
+$dark-border2: #252;
+
+$dark-accent-color1: rgb(5, 132, 37); 
+$dark-accent-color2: rgba(202, 173, 8, 0.982);
+
+/* Fonts */
+$font-family: 'Marvel', sans-serif;
+
+//Font family
+.marvel-regular {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+.marvel-bold {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+    
+.marvel-regular-italic {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+    
+.marvel-bold-italic {
+  font-family: 'Marvel', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}

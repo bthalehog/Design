@@ -1,0 +1,49 @@
+/* Tech viewpage */
+@import 'variables';
+
+/* --------------- Layout --------------- */
+.main-technology {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+  
+/*----- Tech article page side-bar -----*/
+
+.side-bar {
+  align-items: center;
+  align-content: center;
+  background-color: #7aabd5;
+  color: $passive-frame-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 400px;
+  width: 200px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+/* ---------- Tech article page content -----------*/
+.tech-article {
+  align-content: center;
+  height: 80%;
+  width: 800px;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/* Media queries */
+
